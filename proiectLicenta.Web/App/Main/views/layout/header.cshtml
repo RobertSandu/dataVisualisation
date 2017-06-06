@@ -1,0 +1,42 @@
+﻿<header class="main-header" ng-controller="app.views.layout.header as vm">
+    
+    <!-- Logo -->
+    <a href="#" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>Pr</b>L</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Proiect</b>licenta</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown notifications-menu">
+                    <a aria-expanded="true" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i ng-class="vm.currentLanguage.icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <!-- inner menu: contains the actual data -->
+                            <div style="position: relative; overflow: hidden; width: auto; height: 200px;" class="slimScrollDiv">
+                                <ul style="overflow: hidden; width: 100%; height: 200px;" class="menu">
+                                    <li ng-repeat="language in vm.languages" ng-hide="vm.currentLanguage.name == language.name">
+                                        
+                                            <a href="~/AbpLocalization/ChangeCulture?cultureName={{language.name}}"><i ng-class="language.icon"></i> {{language.displayName}}</a>
+                                        
+                                    </li>
+                                    
+                                </ul><div style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 195.122px;" class="slimScrollBar"></div><div style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

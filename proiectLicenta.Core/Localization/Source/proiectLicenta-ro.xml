@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="ro">
+  <texts>
+    <text name="HomePage" value="Acasa" />
+    <text name="About" value="Despre" />
+    <text name="WellcomeMessage" value="Proiect licenta Robert-Stelian Sandu" />
+    
+    <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
+    <text name="TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
+
+    <text name="InvalidUserNameOrPassword" value="Invalid user name or password" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="There is no tenant defined with name {0}" />
+    <text name="TenantIsNotActive" value="Tenant {0} is not active." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="User {0} is not active and can not log in." />
+    <text name="PleaseEnterLoginInformation" value="Please enter login information" />
+    <text name="TenancyName" value="Tenancy name" />
+    <text name="UserNameOrEmail" value="User name or email" />
+    <text name="Password" value="Password" />
+    <text name="RememberMe" value="Remember me" />
+    <text name="LogIn" value="Log in" />
+
+    <text name="LoginFailed" value="Login failed!" />
+
+    <text name="NameSurname" value="Name surname" />
+    <text name="UserName" value="User name" />
+    <text name="Name" value="Name" />
+    <text name="Surname" value="Surname" />
+    <text name="EmailAddress" value="Email address" />
+
+    <text name="Tenants" value="Tenants" />
+    <text name="SavedSuccessfully" value="Saved successfully" />
+    <text name="CreateNewTenant" value="Create new tenant" />
+    <text name="AdminEmailAddress" value="Admin email address" />
+    <text name="Save" value="Save" />
+    <text name="Cancel" value="Cancel" />
+    <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
+    <text name="DefaultPasswordIs" value="Default password is {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Can be empty to login as host." />
+    <text name="Register" value="Register" />
+    <text name="OrLoginWith" value="Or login with" />
+    <text name="WaitingForActivationMessage" value="Your account is waiting to be activated by system admin." />
+    <text name="TenantSelection" value="Tenant Selection" />
+    <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
+    <text name="Logout" value="Logout" />
+    <text name="Clasificare TIOBE" value="Clasificare TIOBE" />
+    <text name="Clasificare TIOBE Multiline Series" value="Clasificare TIOBE Multiline Series" />
+    <text name="Clasificare TIOBE Donut Chart" value="Clasificare TIOBE Donut Chart" />
+  
+    <text name="Stack Overflow" value="Stack Overflow" />
+    <text name="Clasificare Tag-uri" value="Clasificare Tag-uri" />
+    <text name="Relatii Tag-uri" value="Relatii Tag-uri" />
+    <text name="Vizualizare utilizatori Statele Unite" value="Vizualizare utilizatori Statele Unite" />
+    <text name="Vizualizare utilizatori global" value="Vizualizare utilizatori global" />
+    <text name="Evenimente Github" value="Evenimente Github" />
+    <text name="Cele mai urmarite repouri" value="Cele mai urmarite repouri" />
+    <text name="Cele mai ramificate (forked) repouri" value="Cele mai ramificate (forked) repouri" />
+    <text name="Cele mai multe tichete" value="Cele mai multe tichete" />
+    <text name="Cei mai multi membri" value="Cei mai multi membri" />
+    <text name="Statistici Github" value="Statistici Github" />
+    <text name="Limbajele folosite de utilizatori" value="Limbajele folosite de utilizatori" />
+    <text name="Raspunsuri per zi" value="Raspunsuri per zi" />
+    <text name="Raspunsuri per ora" value="Raspunsuri per ora" />
+    <text name="Raspunsuri per zi si ora" value="Raspunsuri per zi si ora" />
+
+  </texts>
+</localizationDictionary>

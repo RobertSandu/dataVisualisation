@@ -1,0 +1,17 @@
+﻿<div ng-controller='app.StackOverflow.StackOverflowDonutController as vm'>
+    <div class="row">
+        <div class="col-md-6">
+            <div isteven-multi-select
+                 input-model="vm.StackOverflowItemsInputModel"
+                 output-model="vm.StackOverflowItemsOutputModel"
+                 button-label="tag"
+                 item-label="tag"
+                 tick-property="ticked">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <donut-directive data="vm.data" hovered-portion="vm.hoveredPortion"></donut-directive>
+        </div>
+    </div>
+    
+</div>

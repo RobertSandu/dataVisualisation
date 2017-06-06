@@ -1,0 +1,50 @@
+﻿<div ng-controller='app.Github.MostMembersRepos as vm'>
+
+    <div class="row">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <h3 class="text-center">Repourile cu cele mai multi membri</h3>
+                    <p class="text-center">
+                        Lista repourilor cu cele mai multi membri noi in aceasta zi.
+                    </p>
+
+                    <ul class="timeline">
+
+                        <li class="timeline" ng-repeat="item in vm.items" ng-class-odd="timeline-inverted" ng-class-even="">
+
+
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" ng-src="{{ item.root.owner.avatar_url }}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4><a ng-href="{{ item.root.html_url }}" target="_blank">{{ item.root.name }}</a></h4>
+                                    <h4 class="subheading">
+                                        <span class="fa fa-users" aria-hidden="true"></span>{{ item.count }}
+                                    </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                        {{ item.root.description }}
+                                    </p>
+                                </div>
+                            </div>
+                            <div ng-class="$last ? '' : 'line'"></div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

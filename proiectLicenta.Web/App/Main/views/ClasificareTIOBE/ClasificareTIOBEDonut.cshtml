@@ -1,0 +1,65 @@
+﻿<div ng-controller='app.clasificareTIOBE.ClasificareTiobeDonutController as vm'>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">An</div>
+                        <div class="panel-body">
+                            <rzslider rz-slider-model="vm.yearSlider.value"
+                                      rz-slider-options="vm.yearSlider.options"></rzslider>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Luna</div>
+                        <div class="panel-body">
+                            <rzslider rz-slider-model="vm.monthSlider.value"
+                                      rz-slider-options="vm.monthSlider.options"></rzslider>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <donut-directive data="vm.data" hovered-portion="vm.hoveredPortion"></donut-directive>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div ng-hide="!vm.hoveredPortion.selected" class="ng-hide">
+
+                        <div class="panel panel-primary">
+
+                            <div class="panel-heading">
+
+                                <h3 class="panel-title"> {{ vm.hoveredPortion.name }} - {{ vm.hoveredPortion.value }} % </h3>
+
+                            </div>
+
+                            <div class="panel-body" ng-bind-html="vm.wikipediaHTMLContent">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,83 @@
+﻿<style>
+    .land {
+        fill: #3c8dbc;
+    }
+
+    .land:hover {
+        fill: #4CAF50;
+    }
+
+    .selectedLand {
+        fill: orange;
+    }
+
+    .border {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+    }
+
+    .bubble {
+        fill: red;
+        fill-opacity: .5;
+        stroke: #fff;
+        stroke-width: 1px;
+    }
+
+    .bubble:hover {
+        stroke: #000;
+    }
+
+    .legend circle {
+        fill: none;
+        stroke: #ccc;
+    }
+
+    .legend text {
+        fill: #777;
+        font: 10px sans-serif;
+        text-anchor: middle;
+    }
+
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+</style>
+
+<div ng-controller='app.StackOverflow.StackOverflowWorldMapController as vm'>
+
+    <div class="row">
+
+        <div class="col-md-offset-2 col-md-10">
+            <world-directive locations="vm.worldUsersLocations"></world-directive>
+        </div>
+
+    </div>
+
+</div>
